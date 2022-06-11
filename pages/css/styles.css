@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Signika:300,700");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 body, html {
   margin: 0;
   animation: BackgroundFadeIn 2.5s 2s forwards;
@@ -46,8 +46,8 @@ body, html {
   }
 }
 .headers h1 {
-  font-size: 55px;
-  font-family: Signika;
+  font-size: 5em;
+  font-family: Raleway;
   color: white;
 }
 
@@ -57,9 +57,8 @@ h1 {
 
 .headers p {
   color: rgb(187, 184, 184);
-  margin: 3% 3%;
-  line-height: 35px;
-  font-size: 17px;
+  line-height: 2em;
+  font-size: 1.1em;
   font-family: sans-serif;
 }
 
@@ -79,27 +78,13 @@ h1 {
   transition: all 0.25s ease-in-out;
 }
 
-#particles-js {
-  background: black;
-  height: 100vh;
-}
-
 script {
   display: block;
-}
-
-#shadowBox {
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.2);
-  /* Black w/opacity/see-through */
-  border: 3px solid;
 }
 
 .rainbow {
   display: block;
   text-align: center;
-  text-decoration: underline;
   font-size: 32px;
   font-family: monospace;
   letter-spacing: 5px;
@@ -131,6 +116,62 @@ script {
     /* color: #6666ff; */
     color: rgb(102, 102, 255);
     color: linear-gradient(90deg, rgb(102, 102, 255) 42%, rgb(33, 8, 84) 100%, rgb(204, 204, 204) 100%);
+  }
+}
+#particles-js {
+  height: 100vh;
+  background: black;
+  display: block;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#particles-js span.scroll {
+  display: block;
+  font-family: Raleway;
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+}
+#particles-js .down-arrow {
+  stroke: white;
+  position: absolute;
+  right: 50%;
+  bottom: 10em;
+  width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+#particles-js .down-arrow path {
+  fill: white;
+}
+
+section {
+  height: 100vh;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 540px) {
+  #particles-js > svg.down-arrow {
+    height: 4em;
+    width: 4em;
+  }
+
+  #particles-js > span.scroll {
+    display: block;
+    right: 2em;
+    border: 0px solid white;
   }
 }
 
