@@ -1,9 +1,8 @@
-
 const header1 = document.querySelector(".header1")
 const header2 = document.querySelector(".header2")
 const header3 = document.querySelector(".header3")
 const header4 = document.querySelector(".header4")
-// const p = document.querySelector("p")
+const arrow = document.querySelector(".down-arrow");
 const scroll = document.querySelector(".scroll")
 
 setTimeout(function() {
@@ -13,10 +12,13 @@ setTimeout(function() {
   header4.classList.add("rainbow")
   // p.style.display = "block"
   scroll.style.display = "block"
+  arrow.style.display = "block"
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
+  AOS.init();
 }, 2000);
+
 
 
