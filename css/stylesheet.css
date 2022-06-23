@@ -115,13 +115,13 @@ section#about > .toggle input:checked ~ .labels::before {
 }
 
 /************************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main-content {
     margin-left: 0px;
   }
 
   .hamburger {
-    display: inline;
+    display: block;
     color: #97b0c4;
     width: 2.5em;
     height: 2.5em;
@@ -157,12 +157,13 @@ section#about > .toggle input:checked ~ .labels::before {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 50%;
+    width: 60%;
     z-index: 999;
     /* opacity: 0.75; */
     border-bottom: 1px solid black;
     background: #bbbfbb;
     /* border-radius: 0 20% 60% 0; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
     /* ul */
@@ -512,6 +513,10 @@ footer {
 
   .icon-tech {
     display: none;
+  }
+
+  nav {
+    width: 100%;
   }
 }
 
