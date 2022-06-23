@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 body, html {
+  padding: 0;
   margin: 0;
   animation: BackgroundFadeIn 2.5s 2s forwards;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 @keyframes BackgroundFadeIn {
@@ -27,13 +30,21 @@ body, html {
   height: 100%;
   width: 100%;
   text-align: center;
-  z-index: 1;
+  z-index: 20;
 }
 
 .headers {
   position: relative;
   top: 35%;
   animation: MainFadeIn 2.5s forwards;
+}
+
+.hero-img {
+  background: url("/dante-portrait.jpg");
+  width: 50vh;
+  height: 100vh;
+  float: right;
+  border-radius: 20% 0 20% 0;
 }
 
 @keyframes MainFadeIn {
@@ -173,6 +184,30 @@ section {
     display: block;
     right: 2em;
     border: 0px solid white;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .headers h1 {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 880px) {
+  .headers h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero-img {
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+    background-size: cover;
+    border-radius: 0 0 0 0;
+    background-position-x: 20%;
+  }
+
+  .headers h1 {
+    z-index: 99;
   }
 }
 
