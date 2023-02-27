@@ -1,0 +1,124 @@
+
+
+$colDark: #14191A;
+$colLight: #ccc;
+$altColDark: grey;
+
+////////////////////////////////////////////////
+// Triangle for Home
+.home-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.home-curve svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 104px;
+}
+
+.home-curve .shape-fill {
+    fill: $colLight;
+}
+
+
+// Curve got About
+
+.about-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.about-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 78px;
+}
+
+.about-curve .shape-fill {
+    fill: $colDark;
+}
+
+
+// Multiple Waves for credits 
+
+.credit-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.credit-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.credit-curve .shape-fill {
+    fill: #727272;
+}
+
+// Curves for Projects
+
+.project-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.project-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+
+.project-curve .shape-fill {
+    fill: #ccc;
+}
+
+// Curve for Contact 
+
+.contact-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.contact-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+
+.contact-curve .shape-fill {
+    fill: #14191A;
+}
+
+/////////////////////////////////
+
