@@ -435,6 +435,11 @@ h2 {
   display: block;
 }
 
+#pfp {
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+}
 
 .proj-card, .proj-card2, .proj-card3 {
   border-radius: 0.5em;
@@ -510,7 +515,7 @@ footer {
   img {
     width: 5em;
     height: 5em;
-    border-radius: 50%;
+    // border-radius: 50%;
     align-self: center;
   }
 
@@ -565,8 +570,8 @@ footer {
     border-radius: 0.2em;
   }
   .box-learn {
-    border: 2px solid #61dafb;
-    color: #61dafb;
+    border: 2px solid orange;
+    color: orange;
   }
 }
 
