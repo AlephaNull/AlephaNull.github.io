@@ -185,7 +185,7 @@ section#about > .toggle input:checked~.labels::before {
     z-index: 999;
     /* opacity: 0.75; */
     border-bottom: 1px solid black;
-    background: #bbbfbb;
+    background: $colLight;
     /* border-radius: 0 20% 60% 0; */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transform: translateX(-100%); 
@@ -245,6 +245,7 @@ section#about > .toggle input:checked~.labels::before {
   width: 2em;
   height: 2em;
 }
+
 .close-x {
   position: fixed;
   top: 0.5em;
@@ -294,7 +295,7 @@ nav li a {
 
 
 nav li a:hover {
-  color: lime;
+  color: #727272;
   padding: 7px 14px;
   font-size: 1.2em;
 }
@@ -411,7 +412,7 @@ h2 {
 }
 
 .active {
-  color: lime; 
+  color: #334d4d; 
   font-weight: 600;
 }
 
