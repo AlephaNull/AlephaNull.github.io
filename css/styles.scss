@@ -350,7 +350,8 @@ section#home {
 
 section#credits {
   height: 30vh;
-  background: #727272;
+  background: $colDark;
+  color: $colLight;
 }
 
 section#stack {
@@ -371,6 +372,10 @@ section#contact {
 
 section#projects:last-child {
   display: none;
+}
+
+section#projects {
+  height: max-content;
 }
 
 section#about {
@@ -522,30 +527,6 @@ footer {
 
 }
 
-@media screen and (max-width: 1200px) {
-  .contacts {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    grid-gap: 0.5em;
-    font-size: 1em;
-    align-items: center;
-
-    img {
-      width: 3em;
-      height: 3em;
-    }
-  }
-}
-
-@media screen and (max-width: 717px) {
-  section#about {
-    /* height: 180vh; */
-    height: max-content;
-    margin: 0;
-    padding: 0;
-  }
-}
-
 
 .tech-stacks {
   display: grid;
@@ -576,6 +557,44 @@ footer {
   }
 }
 
+
+// Media Queries
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    font-size: 1em;
+    align-items: center;
+
+    img {
+      width: 3em;
+      height: 3em;
+    }
+  }
+}
+
+@media screen and (max-width: 717px) {
+  section#about {
+    /* height: 180vh; */
+    height: max-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tech-stacks {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+  section#stack {
+    height: max-content;
+  }
+}
+
+
+
 @media screen and (max-width: 900px) {
   .tech-stacks {
     display: grid;
@@ -590,7 +609,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 530px) {
   .tech-stacks {
     grid-template-columns: 1fr;
     
@@ -608,5 +627,21 @@ footer {
   nav {
     width: 100%;
   }
+
+  span#src-gh {
+    size: 5px;
+  }
   
+}
+
+@media screen and (min-width: 713px) {
+  section#about {
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .tech-stacks {
+    grid-template-columns: 1fr 1fr;
+  }
 }
